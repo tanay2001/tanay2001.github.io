@@ -1,406 +1,679 @@
 
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
-<html>
+<!DOCTYPE html>
+<html lang="en">
 
 <head>
-  <meta name=viewport content="width=800">
-  <meta name="generator" content="HTML Tidy for Linux/x86 (vers 11 February 2007), see www.w3.org">
-  <style type="text/css">
-    /* Color scheme stolen from Sergey Karayev */
-    
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=800">
+  <title>Tanay Dixit</title>
+  <link rel="icon" type="image/png" href="images/profile_pic.jpeg">
+  <link href="https://fonts.googleapis.com/css?family=Lato:400,700"
+        rel="stylesheet" type="text/css">
+
+  <style>
     a {
       color: #1772d0;
       text-decoration: none;
     }
-    
-    a:focus,
-    a:hover {
+
+    a:focus, a:hover {
       color: #f09228;
       text-decoration: none;
     }
-    
-    body,
-    td,
-    th,
-    tr,
-    p,
-    a {
+
+    body, td, th, tr, p, a {
       font-family: 'Lato', Verdana, Helvetica, sans-serif;
-      font-size: 15px
+      font-size: 15px;
     }
-    
+
     strong {
       font-family: 'Lato', Verdana, Helvetica, sans-serif;
       font-size: 15px;
     }
-    
+
     heading {
       font-family: 'Lato', Verdana, Helvetica, sans-serif;
       font-size: 22px;
     }
-    
+
     papertitle {
       font-family: 'Lato', Verdana, Helvetica, sans-serif;
       font-size: 15px;
-      font-weight: 700
+      font-weight: 700;
     }
-    
+
     name {
       font-family: 'Lato', Verdana, Helvetica, sans-serif;
       font-size: 32px;
     }
-    
+
     .one {
       width: 160px;
-      height: 120px;
+      min-height: 120px;
       position: relative;
     }
 
-    
-    span.highlight {
-      background-color: #ffffd0;
+    .work-logo {
+      height: 65px;
+      display: flex;
+      align-items: center;
+    }
+
+    .work-logo img {
+      max-height: 60px;
+      max-width: 90%;
+      object-fit: contain;
+    }
+
+    .publication-image {
+      width: 100%;
+      max-width: 160px;
+    }
+
+    .publication-row td {
+      padding-bottom: 25px;
     }
   </style>
-  <link rel="icon" type="image/png" href="images/profile_pic.jpeg">
-  <title>Tanay Dixit</title>
-  <meta http-equiv="Content-Type" content="text/html; charset=us-ascii">
-  <link href='https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
-  <!-- Global site tag (gtag.js) - Google Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-167314770-1"></script>
+
+  <!-- Google Analytics -->
+  <script async
+    src="https://www.googletagmanager.com/gtag/js?id=UA-167314770-1">
+  </script>
   <script>
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
-  
     gtag('config', 'UA-167314770-1');
   </script>
 </head>
 
 <body>
-  <table width="800" border="0" align="center" cellspacing="0" cellpadding="0">
-    <tr>
-      <td>
-        <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
-          <tr>
-            <td width="75%" valign="middle">
-              <p align="center">
-                <name>Tanay Dixit</name>
-              </p>
 
-	<p>
-	Hi, I'm Tanay - an ML Engineer at Adobe on the <a href="https://business.adobe.com/products/experience-platform/agent-orchestrator.html" target="_blank">Experience Platform Agent Orchestrator</a>, focused on memory and personalization for our agents and the eval harnesses that drive our hill-climbing loop.
-	<br><br>
-		I graduated with an MS in Computer Science from the University of Illinois, Urbana-Champaign, where I worked with <a href="http://dm1.cs.uiuc.edu/" target="_blank">Prof. Jiawei Han</a>. I am honoured to be a <a href="https://www.siebelscholars.com/articles/siebel-scholars-foundation-announces-class-of-2025/" target="_blank">Siebel Scholar (Class of 2025)</a>. I graduated from the Indian Institute of Technology Madras in 2023 with a bachelor's degree in ECE, where I worked with <a href="https://www.cse.iitm.ac.in/~miteshk/" target="_blank">Prof. Mitesh Khapra</a>. I have first-author papers at ACL, EMNLP, and WWW on multi-agent systems and evaluation frameworks (1200+ citations).
-	</p>
-	<br>
-<b> Research </b>
-	<br>
-<ul>
-<li> <b>Agentic Systems:</b> Developed a multi-agent system that autonomously searches and suggests Wikipedia updates from online sources <a href="https://arxiv.org/abs/2508.03728" target="_blank">[1]</a>. </li>
-<li> <b>Evaluations & Applications:</b> Built an interactive tool for performing LLM prompt migrations efficiently <a href="https://www.arxiv.org/abs/2409.03928" target="_blank">[1]</a>. Increased the usability and interpretability of LLM-based NL2SQL pipelines by introducing intermediate representations <a href="https://arxiv.org/abs/2309.09495" target="_blank">[2]</a>. Showed NLG metrics contain several evaluation blind spots and proposed a better framework to meta-evaluate metrics <a href="https://arxiv.org/abs/2109.05771.pdf" target="_blank">[3]</a>. Released a large meta-evaluation dataset and metrics for low-resource translation evaluation <a href="https://arxiv.org/abs/2212.10180" target="_blank">[4]</a> </li>
-<li> <b>Interpretability & Trustworthiness:</b> Developed a retrieval augmented counterfactual data generation techniques to improve model generalization <a href="https://arxiv.org/abs/2210.04873" target="_blank">[5]</a> , and improved the factuality of summarization systems by training models using a ranking loss <a href="https://arxiv.org/abs/2305.14981" target="_blank">[6]</a> </li>
-</ul>
+<table width="800" border="0" align="center"
+       cellspacing="0" cellpadding="0">
+<tr>
+<td>
 
-              <p align=center>
-                <a href="mailto:dixittanay@gmail.com" target="_blank">Email</a> &nbsp/&nbsp
-                <a href="https://www.linkedin.com/in/tanaydixit/" target="_blank">LinkedIn</a> &nbsp/&nbsp
-                <a href="https://scholar.google.com/citations?hl=en&user=21JBGiUAAAAJ" target="_blank">Google Scholar</a> &nbsp/&nbsp
-                <a href="https://www.semanticscholar.org/author/Tanay-Dixit/2126503480" target="_blank">Semantic Scholar</a>                 
-              </p>
-            </td>
-            <td width="25%">
-              <img style="width:100%;max-width:100%" src="images/profile_pic.png">
-            </td>
-          </tr>
+<!-- ================= ABOUT ================= -->
 
-<table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
-  <tr>
-    <td width="100%" valign="middle">
-      <heading>Work Experience</heading>
-    </td>
-  </tr>
-</table>
-
-<table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
+<table width="100%" align="center" border="0"
+       cellspacing="0" cellpadding="20">
 <tr>
 
-<td valign="top" width="20%">
-<div class="one">
+<td width="75%" valign="middle">
 
-<a href="images/adobe" target="_blank"><img style="width:70%;heigth:70%;max-width:100%" src='images/adobe.png'></a>
-	<p><b>Adobe</b> <br>
-        July 2025 - current <br>
-        Machine Learning Engineer</p>
-        <a href="#">Agent Orchestrator for Enterprise</a>
-</div>
+  <p align="center">
+    <name>Tanay Dixit</name>
+  </p>
+
+  <p>
+    Hi, I'm Tanay - a Research Scientist at
+    <b>Salesforce</b>, where I work on training
+    speech models.
+    <br><br>
+
+    I graduated with an MS in Computer Science
+    from the University of Illinois, Urbana-Champaign,
+    where I worked with
+    <a href="http://dm1.cs.uiuc.edu/" target="_blank">
+      Prof. Jiawei Han
+    </a>.
+
+    I am honoured to be a
+    <a href="https://www.siebelscholars.com/articles/siebel-scholars-foundation-announces-class-of-2025/"
+       target="_blank">
+      Siebel Scholar (Class of 2025)
+    </a>.
+
+    I graduated from the Indian Institute of Technology
+    Madras in 2023 with a bachelor's degree in ECE,
+    where I worked with
+    <a href="https://www.cse.iitm.ac.in/~miteshk/"
+       target="_blank">
+      Prof. Mitesh Khapra
+    </a>.
+
+    I have first-author papers at ACL, EMNLP, and WWW
+    on multi-agent systems and evaluation frameworks
+    (1200+ citations).
+  </p>
+
+  <p align="center">
+    <a href="mailto:dixittanay@gmail.com">Email</a>
+    &nbsp;/&nbsp;
+    <a href="https://www.linkedin.com/in/tanaydixit/"
+       target="_blank">LinkedIn</a>
+    &nbsp;/&nbsp;
+    <a href="https://scholar.google.com/citations?hl=en&user=21JBGiUAAAAJ"
+       target="_blank">Google Scholar</a>
+    &nbsp;/&nbsp;
+    <a href="https://www.semanticscholar.org/author/Tanay-Dixit/2126503480"
+       target="_blank">Semantic Scholar</a>
+  </p>
+
 </td>
 
-<td valign="top" width="20%">
-<div class="one">
-
-<a href="images/msr" target="_blank"><img style="width:100%;heigth:100%;max-width:100%" src='images/msr.png'></a>
-	<p><b>Microsoft Research</b> <br>
-	March - July 2023 <br>
-        Research Engineer</p>
-        <a href="https://arxiv.org/pdf/2309.09495.pdf" target="_blank">Natural language to SQL</a>
-</div>
-</td>
-
-<td valign="top" width="20%">
-<div class="one">
-
-<a href="images/usc" target="_blank"><img style="width:70%;heigth:70%;max-width:100%" src='images/usc.png'></a>
-	<p><b>University of Southern California</b><br>
-	Summer 2022 <br>
-	ML Research Intern</p>
-	<a href="https://arxiv.org/pdf/2305.14981" target="_blank">Faithful Summarization</a>
-</div>
-</td>
-
-<td valign="top" width="20%">
-<div class="one">
-
-<a href="images/uw" target="_blank"><img style="width:50%;heigth:50%;max-width:70%" src='images/uw.png'></a>
-	<p><b>University of Washington</b><br>
-        Spring 2022<br>
-        ML Research Intern</p>
-        <a href="https://arxiv.org/pdf/2210.04873" target="_blank">Model Interpretability</a>
-</div>
+<td width="25%">
+  <img style="width:100%;max-width:100%"
+       src="images/profile_pic.png"
+       alt="Tanay Dixit">
 </td>
 
 </tr>
 </table>
-		
-<br><br><br><br><br><br>
-
-        <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
-          <tr>
-            <td width="100%" valign="middle">
-              <heading>Publications</heading>
-            </td>
-          </tr>
-        </table>
-
-        <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
-	<tr>
-            <td width="25%">
-              <div class="one">
-                  <img style="width:100%;max-width:100%" src='images/Winell.png'>
-              </div>
-            </td>
-            <td valign="top" width="75%">
-              <a href="https://arxiv.org/abs/2508.03728" target="_blank">
-                  <papertitle>WINELL: Wikipedia Never-Ending Updating with LLM Agents</papertitle>
-              </a>
-              <br>
-              Revanth Gangi Reddy*, <strong>Tanay Dixit*</strong>, Jiaxin Qin, Cheng Qian, Daniel Lee, Jiawei Han, Kevin Small, Xing Fan, Ruhi Sarikaya, Heng Ji
-              <br>
-              <em>WWW 2026</em>
-              <br>
-              [<a href="https://arxiv.org/abs/2508.03728" target="_blank">Paper</a>]
-              <br><br><br>
-            </td>
-          </tr>
-
-	<tr>
-            <td width="25%">
-              <div class="one">
-                  <a href="images/retain.png" target="_blank"><img style="width:100%;max-width:100%" src='images/retain.png'></a>
-              </div>
-
-            </td>
-            <td valign="top" width="75%">
-              <a href="https://www.arxiv.org/abs/2409.03928" target="_blank">
-                  <papertitle>RETAIN: Interactive Tool for Regression Testing Guided LLM Migration</papertitle>
-              </a>
-              <br>
-              <strong>Tanay Dixit</strong>, Daniel Lee, Sally Fang, Sai Sree Harsha, Anirudh Sureshan, Akash Maharaj, Yunyao Li
-              <br>
-              <em>EMNLP 2024 Demo</em>
-              <br>
-              [<a href="https://www.arxiv.org/abs/2409.03928" target="_blank">Paper</a>]
-              <br><br><br>
-              <!-- <p>Large Language Models (LLMs) have revolutionized programming and software engineering. AI programming assistants such as GitHub Copilot X enable conversational programming, narrowing the gap between human intent and code generation. However, prior literature has identified a key challenge--there is a gap between user's mental model of the system's understanding after a sequence of natural language utterances, and the AI system's actual understanding. To address this, we introduce Programming with Representations (PwR), an approach that uses representations to convey the system's understanding back to the user in natural language. We conducted an in-lab task-centered study with 14 users of varying programming proficiency and found that representations significantly improve understandability, and instilled a sense of agency among our participants. Expert programmers use them for verification, while intermediate programmers benefit from confirmation. Natural language-based development with LLMs, coupled with representations, promises to transform software development, making it more accessible and efficient.</p> -->
-            </td>
-          </tr>
-		
-	<tr>
-            <td width="25%">
-              <div class="one">
-                  <a href="images/pwr.png" target="_blank"><img style="width:100%;max-width:100%" src='images/pwr.png'></a>
-              </div>
-              
-            </td>
-            <td valign="top" width="75%">
-              <a href="https://arxiv.org/pdf/2309.09495.pdf" target="_blank">
-                  <papertitle>PwR: Exploring the Role of Representations in Conversational Programming</papertitle>
-              </a>
-              <br>
-              Pradyumna YM, Vinod Ganesan, Dinesh Kumar Arumugam, Meghna Gupta, Nischith Shadagopan,  <strong>Tanay Dixit</strong>, Sameer Segal, Pratyush Kumar, Mohit Jain, Sriram Rajamani
-              <br>
-              <br>
-              [<a href="https://arxiv.org/pdf/2309.09495.pdf" target="_blank">Arxiv</a>]
-              <br><br><br>
-              <!-- <p>Large Language Models (LLMs) have revolutionized programming and software engineering. AI programming assistants such as GitHub Copilot X enable conversational programming, narrowing the gap between human intent and code generation. However, prior literature has identified a key challenge--there is a gap between user's mental model of the system's understanding after a sequence of natural language utterances, and the AI system's actual understanding. To address this, we introduce Programming with Representations (PwR), an approach that uses representations to convey the system's understanding back to the user in natural language. We conducted an in-lab task-centered study with 14 users of varying programming proficiency and found that representations significantly improve understandability, and instilled a sense of agency among our participants. Expert programmers use them for verification, while intermediate programmers benefit from confirmation. Natural language-based development with LLMs, coupled with representations, promises to transform software development, making it more accessible and efficient.</p> -->
-            </td>
-          </tr>
-
-		
-          <tr>
-            <td width="25%">
-              <div class="one">
-                  <a href="images/efactsum.png" target="_blank"><img style="width:100%;max-width:100%" src='images/efactsum.png'></a>
-              </div>
-              
-            </td>
-            <td valign="top" width="75%">
-              <a href="https://arxiv.org/pdf/2305.14981" target="_blank">
-                  <papertitle>Improving Factuality of Abstractive Summarization without Sacrificing Summary Quality</papertitle>
-              </a>
-              <br>
-              <strong>Tanay Dixit</strong>, Fei Wang, Muhao Chen
-              <br>
-              <em>ACL 2023</em>
-              <br>
-              [<a href="https://arxiv.org/pdf/2305.14981" target="_blank">Paper</a>][<a href="https://github.com/tanay2001/
-              EFactSum" target="_blank">Code</a>]
-              <br><br><br>
-              <!-- <p>Improving factual consistency of abstractive summarization has been a widely studied topic. However, most of the prior works on training factuality-aware models have ignored the negative effect it has on summary quality. We propose EFACTSUM (i.e., Effective Factual Summarization), a candidate summary generation and ranking technique to improve summary factuality without sacrificing summary quality. We show that using a contrastive learning framework with our refined candidate summaries leads to significant gains on both factuality and similarity-based metrics. Specifically, we propose a ranking strategy in which we effectively combine two metrics, thereby preventing any conflict during training. Models trained using our approach show up to 6 points of absolute improvement over the base model with respect to FactCC on XSUM and 11 points on CNN/DM, without negatively affecting either similarity-based metrics or absractiveness.</p> -->
-            </td>
-          </tr>  
-
-          <tr>
-            <td width="25%">
-              <div class="one">
-                  <a href="images/IndicMT.png" target="_blank"><img style="width:100%;max-width:100%" src='images/IndicMT.png'></a>
-              </div>
-              
-            </td>
-            <td valign="top" width="75%">
-              <a href="https://arxiv.org/pdf/2212.10180" target="_blank">
-                  <papertitle>IndicMT Eval: A Dataset to Meta-Evaluate Machine Translation Metrics for Indian Languages</papertitle>
-              </a>
-              <br>
-              Ananya Sai, <strong>Tanay Dixit</strong>, Vignesh Nagarajan, Anoop Kunchukuttan, Pratyush Kumar, Mitesh M. Khapra, Raj Dabre
-              <br>
-              <em>ACL 2023</em>
-              <br>
-              [<a href="https://arxiv.org/pdf/2212.10180" target="_blank">Paper</a>][<a href="https://github.com/AI4Bharat/IndicMT-Eval" target="_blank">Code</a>]
-              <br><br><br>
-              <!-- <p>The rapid growth of machine translation (MT) systems has necessitated comprehensive studies to meta-evaluate evaluation metrics being used, which enables a better selection of metrics that best reflect MT quality. Unfortunately, most of the research focuses on high-resource languages, mainly English, the observations for which may not always apply to other languages. Indian languages, having over a billion speakers, are linguistically different from English, and to date, there has not been a systematic study of evaluating MT systems from English into Indian languages. In this paper, we fill this gap by creating an MQM dataset consisting of 7000 fine-grained annotations, spanning 5 Indian languages and 7 MT systems, and use it to establish correlations between annotator scores and scores obtained using existing automatic metrics. Our results show that pre-trained metrics, such as COMET, have the highest correlations with annotator scores. Additionally, we find that the metrics do not adequately capture fluency-based errors in Indian languages, and there is a need to develop metrics focused on Indian languages. We hope that our dataset and analysis will help promote further research in this area.</p> -->
-              </td>
-          </tr>          
-
-          <tr>
-            <td width="25%">
-              <div class="one">
-                  <a href="images/CORE.png" target="_blank"><img style="width:100%;max-width:100%" src='images/CORE.png'></a>
-              </div>
-              
-            </td>
-            <td valign="top" width="75%">
-              <a href="https://arxiv.org/pdf/2210.04873" target="_blank">
-                  <papertitle>CORE: A Retrieve-then-Edit Framework for Counterfactual Data Generation</papertitle>
-              </a>
-              <br>
-              <strong>Tanay Dixit</strong>,Bhargavi Paranjape, Hannaneh Hajishirzi, Luke Zettlemoyer
-              <br>
-              <em>EMNLP 2022 (Findings)</em>
-              <br>
-              [<a href="https://arxiv.org/pdf/2210.04873" target="_blank">Paper</a>][<a href="https://github.com/tanay2001/CORE" target="_blank">Code</a>]
-              <br><br><br>
-              <!-- <p>Counterfactual data augmentation (CDA) -- i.e., adding minimally perturbed inputs during training -- helps reduce model reliance on spurious correlations and improves generalization to out-of-distribution (OOD) data. Prior work on generating counterfactuals only considered restricted classes of perturbations, limiting their effectiveness. We present COunterfactual Generation via Retrieval and Editing (CORE), a retrieval-augmented generation framework for creating diverse counterfactual perturbations for CDA. For each training example, CORE first performs a dense retrieval over a task-related unlabeled text corpus using a learned bi-encoder and extracts relevant counterfactual excerpts. CORE then incorporates these into prompts to a large language model with few-shot learning capabilities, for counterfactual editing. Conditioning language model edits on naturally occurring data results in diverse perturbations. Experiments on natural language inference and sentiment analysis benchmarks show that CORE counterfactuals are more effective at improving generalization to OOD data compared to other DA approaches. We also show that the CORE retrieval framework can be used to encourage diversity in manually authored perturbations</p> -->
-              </td>
-          </tr>
-
-          <tr>
-            <td valign="top" width="25%">
-              <div class="one">
-                  <a href="images/Instructv2.png" target="_blank"><img style="width:100%;max-width:100%" src='images/Instructv2.png'></a>
-              </div>
-              
-            </td>
-            <td valign="top" width="75%">
-              <a href="https://arxiv.org/pdf/2204.07705" target="_blank">
-                  <papertitle>SUPER-NATURALINSTRUCTIONS: Generalization via Declarative Instructions on 1600+ NLP Tasks</papertitle>
-              </a>
-              <br>
-              Yizhong Wang, Swaroop Mishra, Pegah Alipoormolabashi, Yeganeh Kordi, Amirreza Mirzaei, Anjana Arunkumar, Arjun Ashok, Arut Selvan Dhanasekaran, Atharva Naik, David Stap, Eshaan Pathak, Giannis Karamanolakis, Haizhi Gary Lai, Ishan Purohit, Ishani Mondal, Jacob Anderson, Kirby Kuznia, Krima Doshi, Maitreya Patel, Kuntal Kumar Pal, Mehrad Moradshahi, Mihir Parmar, Mirali Purohit, Neeraj Varshney, Phani Rohitha Kaza, Pulkit Verma, Ravsehaj Singh Puri, Rushang Karia, Shailaja Keyur Sampat, Savan Doshi, Siddhartha Mishra, Sujan Reddy, Sumanta Patro, <strong>Tanay Dixit</strong>, Xudong Shen, Chitta Baral, Yejin Choi, Noah A Smith, Hannaneh Hajishirzi, Daniel Khashabi
-              <br>
-              <em>EMNLP, 2022</em>
-              <br>
-              [<a href="https://arxiv.org/pdf/2204.07705.pdf" target="_blank">Paper</a>][<a href="https://instructions.apps.allenai.org/" target="_blank">Code</a>]
-              <br><br><br><br><br>
-              <!-- <p>How well can NLP models generalize to a variety of unseen tasks when provided with task instructions? To address this question, we first introduce Super-NaturalInstructions, a benchmark of 1,616 diverse NLP tasks and their expert-written instructions. Our collection covers 76 distinct task types, including but not limited to classification, extraction, infilling, sequence tagging, text rewriting, and text composition. This large and diverse collection of tasks enables rigorous benchmarking of cross-task generalization under instructions -- training models to follow instructions on a subset of tasks and evaluating them on the remaining unseen ones. Furthermore, we build Tk-Instruct, a transformer model trained to follow a variety of in-context instructions (plain language task definitions or k-shot examples). Our experiments show that Tk-Instruct outperforms existing instruction-following models such as InstructGPT by over 9% on our benchmark despite being an order of magnitude smaller. We further analyze generalization as a function of various scaling parameters, such as the number of observed tasks, the number of instances per task, and model sizes. We hope our dataset and model facilitate future progress towards more general-purpose NLP models.</p> -->
-              </td>
-          </tr>
-
-          <tr>
-            <td width="25%">
-              <div class="one">
-                  <a href="images/checklist.png" target="_blank"><img style="width:100%;max-width:100%" src='images/checklist.png'></a>
-              </div>
-              
-            </td>
-            <td valign="top" width="75%">
-              <a href="https://arxiv.org/pdf/2109.05771.pdf" target="_blank">
-                  <papertitle>Perturbation CheckLists for Evaluating NLG Evaluation Metrics</papertitle>
-              </a>
-              <br>
-              Ananya B Sai, <strong>Tanay Dixit</strong>, Dev Yashpal Sheth, Sreyas Mohan, Mitesh M Khapra
-              <br>
-              <em>EMNLP, 2021</em>
-              <br>
-              [<a href="https://arxiv.org/pdf/2109.05771.pdf" target="_blank">Paper</a>][<a href="https://iitmnlp.github.io/EvalEval" target="_blank">Code</a>]
-              <br><br><br>
-              <!-- <p>Natural Language Generation (NLG) evaluation is a multifaceted task requiring assessment of multiple desirable criteria, e.g., fluency, coherency, coverage, relevance, adequacy, overall quality, etc. Across existing datasets for 6 NLG tasks, we observe that the human evaluation scores on these multiple criteria are often not correlated. For example, there is a very low correlation between human scores on fluency and data coverage for the task of structured data to text generation. This suggests that the current recipe of proposing new automatic evaluation metrics for NLG by showing that they correlate well with scores assigned by humans for a single criteria (overall quality) alone is inadequate. Indeed, our extensive study involving 25 automatic evaluation metrics across 6 different tasks and 18 different evaluation criteria shows that there is no single metric which correlates well with human scores on all desirable criteria, for most NLG tasks. Given this situation, we propose CheckLists for better design and evaluation of automatic metrics. We design templates which target a specific criteria (e.g., coverage) and perturb the output such that the quality gets affected only along this specific criteria (e.g.,the coverage drops). We show that existing evaluation metrics are not robust against even such simple perturbations and disagree with scores assigned by humans to the perturbed output. The proposed templates thus allow for a fine-grained assessment of automatic evaluation metrics exposing their limitations and will facilitate better design, analysis and evaluation of such metrics</p> -->
-              </td>
-          </tr>
-
-          <tr>
-            <td width="25%">
-              <div class="one">
-                  <a href="images/nlaug.png" target="_blank"><img style="width:100%;max-width:100%" src='images/nlaug.png'></a>
-              </div>
-              
-            </td>
-            <td valign="top" width="75%">
-              <a href="https://arxiv.org/pdf/2112.02721.pdf">
-                  <papertitle>NL-Augmenter: A Framework for Task-Sensitive Natural Language Augmentation</papertitle>
-              </a>
-              <br>
-                Kaustubh D. Dhole, Varun Gangal, Sebastian Gehrmann, ... , <strong>Tanay Dixit</strong>, ... (many authors)
-              <br>
-              <em>NEJLT 2023 (GEM Workshop, IJCNLP 2021) </em>
-              <br>
-              [<a href="https://arxiv.org/pdf/2112.02721.pdf" target="_blank">Paper</a>][<a href="https://github.com/GEM-benchmark/NL-Augmenter" target="_blank">Code</a>]
-              <br><br><br>
-              <!-- <p>Data augmentation is an important component in the robustness evaluation of models in natural language processing (NLP) and in enhancing the diversity of the data they are trained on. In this paper, we present NL-Augmenter, a new participatory Pythonbased natural language augmentation framework which supports the creation of both transformations (modifications to the data) and filters (data splits according to specific features). We describe the framework and an initial set of 117 transformations and 23 filters for a variety of natural language tasks. We demonstrate the efficacy of NL-Augmenter by using several of its tranformations to analyze the robustness of popular natural language models.</p> -->
-              </td>
-          </tr>
 
 
-        
-        
-		   
-        
-        
-        <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
-          <tr>
-            <td>
-              <br>
-              <p align="right">
-                <font size="2">
-                  <br><a href="https://jonbarron.info/">Template from here</a></font>
-              </p>
-            </td>
-          </tr>
-        </table>
-        
+<!-- ================= WORK EXPERIENCE ================= -->
 
-        </td>
-    </tr>
-  </table>
+<table width="100%" align="center" border="0"
+       cellspacing="0" cellpadding="20">
+<tr>
+<td>
+  <heading>Work Experience</heading>
+</td>
+</tr>
+</table>
+
+<table width="100%" align="center" border="0"
+       cellspacing="0" cellpadding="20">
+
+<tr>
+
+<!-- Salesforce -->
+<td valign="top" width="25%">
+  <div class="one">
+
+    <div class="work-logo">
+      <span style="color:#0b96d6;font-size:22px;font-weight:700;">
+        Salesforce
+      </span>
+    </div>
+
+    <p>
+      <b>Salesforce</b><br>
+      Current<br>
+      Research Scientist
+    </p>
+
+    Training Speech Models
+
+  </div>
+</td>
+
+<!-- Adobe -->
+<td valign="top" width="25%">
+  <div class="one">
+
+    <div class="work-logo">
+      <img src="images/adobe.png" alt="Adobe">
+    </div>
+
+    <p>
+      <b>Adobe</b><br>
+      July 2025 (start)<br>
+      Machine Learning Engineer
+    </p>
+
+    Agent Orchestrator for Enterprise
+
+  </div>
+</td>
+
+<!-- Microsoft Research -->
+<td valign="top" width="25%">
+  <div class="one">
+
+    <div class="work-logo">
+      <img src="images/msr.png" alt="Microsoft Research">
+    </div>
+
+    <p>
+      <b>Microsoft Research</b><br>
+      March - July 2023<br>
+      Research Engineer
+    </p>
+
+    <a href="https://arxiv.org/pdf/2309.09495.pdf"
+       target="_blank">
+      Natural language to SQL
+    </a>
+
+  </div>
+</td>
+
+<!-- USC -->
+<td valign="top" width="25%">
+  <div class="one">
+
+    <div class="work-logo">
+      <img src="images/usc.png"
+           alt="University of Southern California">
+    </div>
+
+    <p>
+      <b>University of Southern California</b><br>
+      Summer 2022<br>
+      ML Research Intern
+    </p>
+
+    <a href="https://arxiv.org/pdf/2305.14981"
+       target="_blank">
+      Faithful Summarization
+    </a>
+
+  </div>
+</td>
+
+</tr>
+</table>
+
+<br><br><br>
+
+
+<!-- ================= PUBLICATIONS ================= -->
+
+<table width="100%" align="center" border="0"
+       cellspacing="0" cellpadding="20">
+<tr>
+<td>
+  <heading>Publications</heading>
+</td>
+</tr>
+</table>
+
+<table width="100%" align="center" border="0"
+       cellspacing="0" cellpadding="20">
+
+<!-- WINELL -->
+<tr class="publication-row">
+
+<td width="25%" valign="top">
+  <div class="one">
+    <img class="publication-image"
+         src="images/Winell.png">
+  </div>
+</td>
+
+<td width="75%" valign="top">
+  <a href="https://arxiv.org/abs/2508.03728"
+     target="_blank">
+    <papertitle>
+      WINELL: Wikipedia Never-Ending Updating with LLM Agents
+    </papertitle>
+  </a>
+
+  <br>
+  Revanth Gangi Reddy*,
+  <strong>Tanay Dixit*</strong>,
+  Jiaxin Qin, Cheng Qian, Daniel Lee,
+  Jiawei Han, Kevin Small, Xing Fan,
+  Ruhi Sarikaya, Heng Ji
+
+  <br>
+  <em>WWW 2026</em>
+  <br>
+
+  [<a href="https://arxiv.org/abs/2508.03728"
+      target="_blank">Paper</a>]
+</td>
+</tr>
+
+
+<!-- RETAIN -->
+<tr class="publication-row">
+
+<td width="25%" valign="top">
+  <div class="one">
+    <a href="images/retain.png" target="_blank">
+      <img class="publication-image"
+           src="images/retain.png">
+    </a>
+  </div>
+</td>
+
+<td width="75%" valign="top">
+
+  <a href="https://www.arxiv.org/abs/2409.03928"
+     target="_blank">
+    <papertitle>
+      RETAIN: Interactive Tool for Regression Testing
+      Guided LLM Migration
+    </papertitle>
+  </a>
+
+  <br>
+  <strong>Tanay Dixit</strong>,
+  Daniel Lee, Sally Fang, Sai Sree Harsha,
+  Anirudh Sureshan, Akash Maharaj, Yunyao Li
+
+  <br>
+  <em>EMNLP 2024 Demo</em>
+  <br>
+
+  [<a href="https://www.arxiv.org/abs/2409.03928"
+      target="_blank">Paper</a>]
+
+</td>
+</tr>
+
+
+<!-- PWR -->
+<tr class="publication-row">
+
+<td width="25%" valign="top">
+  <div class="one">
+    <a href="images/pwr.png" target="_blank">
+      <img class="publication-image"
+           src="images/pwr.png">
+    </a>
+  </div>
+</td>
+
+<td width="75%" valign="top">
+
+  <a href="https://arxiv.org/pdf/2309.09495.pdf"
+     target="_blank">
+    <papertitle>
+      PwR: Exploring the Role of Representations
+      in Conversational Programming
+    </papertitle>
+  </a>
+
+  <br>
+  Pradyumna YM, Vinod Ganesan,
+  Dinesh Kumar Arumugam, Meghna Gupta,
+  Nischith Shadagopan,
+  <strong>Tanay Dixit</strong>,
+  Sameer Segal, Pratyush Kumar,
+  Mohit Jain, Sriram Rajamani
+
+  <br>
+  [<a href="https://arxiv.org/pdf/2309.09495.pdf"
+      target="_blank">Arxiv</a>]
+
+</td>
+</tr>
+
+
+<!-- EFACTSUM -->
+<tr class="publication-row">
+
+<td width="25%" valign="top">
+  <div class="one">
+    <a href="images/efactsum.png" target="_blank">
+      <img class="publication-image"
+           src="images/efactsum.png">
+    </a>
+  </div>
+</td>
+
+<td width="75%" valign="top">
+
+  <a href="https://arxiv.org/pdf/2305.14981"
+     target="_blank">
+    <papertitle>
+      Improving Factuality of Abstractive Summarization
+      without Sacrificing Summary Quality
+    </papertitle>
+  </a>
+
+  <br>
+  <strong>Tanay Dixit</strong>,
+  Fei Wang, Muhao Chen
+
+  <br>
+  <em>ACL 2023</em>
+  <br>
+
+  [<a href="https://arxiv.org/pdf/2305.14981"
+      target="_blank">Paper</a>]
+  [<a href="https://github.com/tanay2001/EFactSum"
+      target="_blank">Code</a>]
+
+</td>
+</tr>
+
+
+<!-- INDICMT EVAL -->
+<tr class="publication-row">
+
+<td width="25%" valign="top">
+  <div class="one">
+    <a href="images/IndicMT.png" target="_blank">
+      <img class="publication-image"
+           src="images/IndicMT.png">
+    </a>
+  </div>
+</td>
+
+<td width="75%" valign="top">
+
+  <a href="https://arxiv.org/pdf/2212.10180"
+     target="_blank">
+    <papertitle>
+      IndicMT Eval: A Dataset to Meta-Evaluate
+      Machine Translation Metrics for Indian Languages
+    </papertitle>
+  </a>
+
+  <br>
+  Ananya Sai,
+  <strong>Tanay Dixit</strong>,
+  Vignesh Nagarajan, Anoop Kunchukuttan,
+  Pratyush Kumar, Mitesh M. Khapra, Raj Dabre
+
+  <br>
+  <em>ACL 2023</em>
+  <br>
+
+  [<a href="https://arxiv.org/pdf/2212.10180"
+      target="_blank">Paper</a>]
+  [<a href="https://github.com/AI4Bharat/IndicMT-Eval"
+      target="_blank">Code</a>]
+
+</td>
+</tr>
+
+
+<!-- CORE -->
+<tr class="publication-row">
+
+<td width="25%" valign="top">
+  <div class="one">
+    <a href="images/CORE.png" target="_blank">
+      <img class="publication-image"
+           src="images/CORE.png">
+    </a>
+  </div>
+</td>
+
+<td width="75%" valign="top">
+
+  <a href="https://arxiv.org/pdf/2210.04873"
+     target="_blank">
+    <papertitle>
+      CORE: A Retrieve-then-Edit Framework
+      for Counterfactual Data Generation
+    </papertitle>
+  </a>
+
+  <br>
+  <strong>Tanay Dixit</strong>,
+  Bhargavi Paranjape, Hannaneh Hajishirzi,
+  Luke Zettlemoyer
+
+  <br>
+  <em>EMNLP 2022 (Findings)</em>
+  <br>
+
+  [<a href="https://arxiv.org/pdf/2210.04873"
+      target="_blank">Paper</a>]
+  [<a href="https://github.com/tanay2001/CORE"
+      target="_blank">Code</a>]
+
+</td>
+</tr>
+
+
+<!-- SUPER NATURAL INSTRUCTIONS -->
+<tr class="publication-row">
+
+<td width="25%" valign="top">
+  <div class="one">
+    <a href="images/Instructv2.png" target="_blank">
+      <img class="publication-image"
+           src="images/Instructv2.png">
+    </a>
+  </div>
+</td>
+
+<td width="75%" valign="top">
+
+  <a href="https://arxiv.org/pdf/2204.07705"
+     target="_blank">
+    <papertitle>
+      SUPER-NATURALINSTRUCTIONS: Generalization via
+      Declarative Instructions on 1600+ NLP Tasks
+    </papertitle>
+  </a>
+
+  <br>
+  Yizhong Wang, Swaroop Mishra,
+  Pegah Alipoormolabashi, Yeganeh Kordi,
+  Amirreza Mirzaei, Anjana Arunkumar,
+  Arjun Ashok, Arut Selvan Dhanasekaran,
+  Atharva Naik, David Stap, Eshaan Pathak,
+  Giannis Karamanolakis, Haizhi Gary Lai,
+  Ishan Purohit, Ishani Mondal, Jacob Anderson,
+  Kirby Kuznia, Krima Doshi, Maitreya Patel,
+  Kuntal Kumar Pal, Mehrad Moradshahi,
+  Mihir Parmar, Mirali Purohit, Neeraj Varshney,
+  Phani Rohitha Kaza, Pulkit Verma,
+  Ravsehaj Singh Puri, Rushang Karia,
+  Shailaja Keyur Sampat, Savan Doshi,
+  Siddhartha Mishra, Sujan Reddy,
+  Sumanta Patro, <strong>Tanay Dixit</strong>,
+  Xudong Shen, Chitta Baral, Yejin Choi,
+  Noah A Smith, Hannaneh Hajishirzi,
+  Daniel Khashabi
+
+  <br>
+  <em>EMNLP, 2022</em>
+  <br>
+
+  [<a href="https://arxiv.org/pdf/2204.07705.pdf"
+      target="_blank">Paper</a>]
+  [<a href="https://instructions.apps.allenai.org/"
+      target="_blank">Code</a>]
+
+</td>
+</tr>
+
+
+<!-- PERTURBATION CHECKLISTS -->
+<tr class="publication-row">
+
+<td width="25%" valign="top">
+  <div class="one">
+    <a href="images/checklist.png" target="_blank">
+      <img class="publication-image"
+           src="images/checklist.png">
+    </a>
+  </div>
+</td>
+
+<td width="75%" valign="top">
+
+  <a href="https://arxiv.org/pdf/2109.05771.pdf"
+     target="_blank">
+    <papertitle>
+      Perturbation CheckLists for Evaluating
+      NLG Evaluation Metrics
+    </papertitle>
+  </a>
+
+  <br>
+  Ananya B Sai,
+  <strong>Tanay Dixit</strong>,
+  Dev Yashpal Sheth, Sreyas Mohan,
+  Mitesh M Khapra
+
+  <br>
+  <em>EMNLP, 2021</em>
+  <br>
+
+  [<a href="https://arxiv.org/pdf/2109.05771.pdf"
+      target="_blank">Paper</a>]
+  [<a href="https://iitmnlp.github.io/EvalEval"
+      target="_blank">Code</a>]
+
+</td>
+</tr>
+
+
+<!-- NL AUGMENTER -->
+<tr class="publication-row">
+
+<td width="25%" valign="top">
+  <div class="one">
+    <a href="images/nlaug.png" target="_blank">
+      <img class="publication-image"
+           src="images/nlaug.png">
+    </a>
+  </div>
+</td>
+
+<td width="75%" valign="top">
+
+  <a href="https://arxiv.org/pdf/2112.02721.pdf"
+     target="_blank">
+    <papertitle>
+      NL-Augmenter: A Framework for Task-Sensitive
+      Natural Language Augmentation
+    </papertitle>
+  </a>
+
+  <br>
+  Kaustubh D. Dhole, Varun Gangal,
+  Sebastian Gehrmann, ... ,
+  <strong>Tanay Dixit</strong>,
+  ... (many authors)
+
+  <br>
+  <em>NEJLT 2023 (GEM Workshop, IJCNLP 2021)</em>
+  <br>
+
+  [<a href="https://arxiv.org/pdf/2112.02721.pdf"
+      target="_blank">Paper</a>]
+  [<a href="https://github.com/GEM-benchmark/NL-Augmenter"
+      target="_blank">Code</a>]
+
+</td>
+</tr>
+
+</table>
+
+
+<!-- ================= FOOTER ================= -->
+
+<table width="100%" align="center" border="0"
+       cellspacing="0" cellpadding="20">
+<tr>
+<td>
+  <p align="right">
+    <font size="2">
+      <a href="https://jonbarron.info/">
+        Template from here
+      </a>
+    </font>
+  </p>
+</td>
+</tr>
+</table>
+
+</td>
+</tr>
+</table>
+
 </body>
-
 </html>
